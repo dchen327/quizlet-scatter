@@ -1,3 +1,12 @@
+"""
+A class to solve Quizlet scatter games.
+
+The program uses selenium to launch a webbrowser and grab information, and then
+uses pyautogui to click the pairs. The user can specify how many times to play
+the game, as there can be some difference in scores between games.
+
+Author: David Chen
+"""
 import pyautogui
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
