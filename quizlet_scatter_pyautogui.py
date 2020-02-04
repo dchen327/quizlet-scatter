@@ -16,6 +16,7 @@ class ScatterSolver:
         for _ in range(num_games):
             cards = self.get_cards()
             self.play_game(cards)
+            sleep(0.5)
 
     def get_pairs(self):
         """ Get term-definition pairs from text file """
@@ -39,17 +40,18 @@ class ScatterSolver:
         return positions
 
     def launch_browser(self):
+        """ Launch chrome and go to game link """
         options = Options()
         options.add_argument(
             '--user-data-dir=/home/dchen327/.config/google-chrome/Profile 2')
         options.add_experimental_option('excludeSwitches', ['enable-automation'])
         options.add_experimental_option('detach', True)
         options.add_argument('--start-maximized')
-        driver = webdriver.Chrome(options=options)
-        driver.get(self.link + 'micromatch')
+        self.driver = webdriver.Chrome(options=options)
+        self.driver.get(self.link + 'micromatch')
 
     def get_cards(self):
-        """ Launch browser and get cards """
+        """ Get values of cards from current game """
         sleep(0.5)
         pyautogui.click(350, 525)
         sleep(0.5)  # wait for words to show up, since there is a fade in animation
@@ -68,6 +70,7 @@ class ScatterSolver:
 
 
 if __name__ == '__main__':
+    # make sure the link is in this format; remove anything beyond the numbers
     link = 'https://quizlet.com/340870200/'
     num_plays = 5
     solver = ScatterSolver(link, num_plays)
