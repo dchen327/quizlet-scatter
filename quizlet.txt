@@ -1,33 +1,281 @@
-SCN -1/////Thiocyanate
-C2H3O2 -1/////Acetate
-HCO3 -1/////Bicarbonate
-CO3 -2/////Carbonate
-C2O4 -2/////Oxalate
-SO3 -2/////Sulfite
-SO4 -2/////Sulfate
-PO4 -3/////Phosphate
-PO3 -3/////Phosphite
-NO3 -1/////Nitrate
-NO2 -1/////Nitrite
-CN -1/////Cyanide
-OH -1/////Hydroxide
-MnO4 -1/////Permanganate
-ClO -1/////Hypochlorite
-ClO2 -1/////Chlorite
-ClO3 -1/////Chlorate
-ClO4 -1/////Perchlorate
-BrO -1/////Hypobromite
-BrO2 -1/////Bromite
-BrO3 -1/////Bromate
-BrO4 -1/////Perbromate
-IO -1/////Hypoiodite
-IO2 -1/////Iodite
-IO3 -1/////Iodate
-IO4 -1/////Periodate
-FO -1/////Hypofluorite
-FO2 -1/////Fluorite
-FO3 -1/////Fluorate
-FO4 -1/////Perfluorate
-CrO4 -2/////Chromate
-Cr2O7 -2/////Dichromate
-NH4 +1/////Ammonium
+a bad apple/////a trouble maker
+a bird in the hand is worth two in the bush/////it is better to be content with what you have than to risk losing everything by seeking to get more
+a blue stocking/////an intellectual or literary woman
+a bone of contention/////something that people argue about for a long time
+a butterfingers/////clumsy
+a carrot and stick/////a combination of reward and punishment
+a cat burglar/////a thief who climbs into the building
+a couch potato/////a lazy/inactive person
+a gravy train/////means to a big income with little effort
+a hard nut to crack/////a person who is difficult to understand
+a hot potato/////a problematic issue
+a monkey business/////silly/dishonest behaviour
+a penny for your thoughts/////I would like to know what you are thinking about
+a picture is worth a thousand words/////A visual presentation is far more descriptive than words.
+a piece of cake/////very easy
+a rat race/////boring work
+A rolling stone gathers no moss./////If someone is on the move, does not collect deep connections.
+a skinflint/////a person who spends as little money as possible
+a top dog/////the most important person
+a tough cookie/////very determined/usually succeeds
+actions speak louder than words/////what someone does is more important than what someone says
+add insult to injury/////act in a way that makes a bad situation worse
+an arm and a leg/////a large amount of money
+apple of her mother's eye/////someone cherished above others
+as busy as a bee/////Extremely busy
+as dry as a bone/////very dry indeed
+as free as a bird/////without a care
+as happy as a clam at high tide/////very happy
+as happy as a lark/////Very happy
+as healthy as a horse/////Very healthy
+as keen as mustard/////enthusiastic
+as nice as pie/////extremely pleasant/polite
+as poor as a church mouse/////very poor
+as proud as a peacock/////extremely proud
+as sick as a dog/////Extremely ill
+as slow as a snail/////extremely slow
+as strong as an ox/////very strong
+as thick as thieves/////very close friends
+as thick as two short planks/////remarkably stupid
+as thin as a rake/////very thin
+at the drop of a hat/////without hesitation
+back to the drawing board/////We need to start over
+bad egg/////a person who behaves in a dishonest way
+barking up the wrong tree/////You're asking or blaming the wrong person
+be as good as gold/////behave well
+be at it/////take part in an activity vigorously
+be for good/////forever
+be glad to see the back of/////Be glad when they leave
+be in a pickle/////be in trouble
+be in a saddle/////be in a position of control/responsibility
+be in the soup/////be in trouble
+be in the thick of sg/////be in the most active part of a situation or activity
+be on cloud nine/////to be very happy
+be on the same wavelength/////think in a similar way
+be thick on the ground/////existing in large numbers
+be thin on top/////becoming bald
+beat a hasty retreat/////go away quickly from an unpleasant place/situation
+beef up/////make something stronger/more effective
+behind bars/////in prison
+best of both worlds/////All the advantages.
+best thing since sliced bread/////A good invention or innovation. A good idea or plan.
+big cheese/////boss
+bite the bullet/////make yourself do something unpleasant or difficult
+blast it/////damn it
+blessing in disguise/////Something good that isn't recognized at first.
+bread and butter/////basic things
+break one's heart/////cause someone great emotional pain
+bring home the bacon/////make a living
+bun in the oven/////to be pregnant
+burn the midnight oil/////Stay up late to work
+butter somebody up/////show admiration
+can't judge a book by its cover/////Can't judge a person by how they look
+catch it/////be punished/told off
+catch someone in the act/////to discover someone while doing something wrong
+caught between two stools/////When someone finds it difficult to choose between two alternatives.
+caught up/////became involved involuntarily
+chew the fat/////chats
+chip on your shoulder/////be sensitive about something
+come to that/////in fact
+compare apples and oranges/////compare completely different things
+compare notes/////exchange opinions
+cool, calm and collected/////relaxed
+costs an arm and a leg/////Expensive
+cross that bridge when you come to it/////worry about that later
+crow's feet/////wrinkles at the outer corner of the eye
+cry over spilt milk/////When you complain about a loss from the past.
+curiosity killed the cat/////Being Inquisitive can lead you into an unpleasant situation.
+cut corners/////took a shortcut
+cut the mustard/////To succeed; to come up to expectations; adequate enough to compete or participate
+devil's advocate/////To present a counter argument
+do you a good turn/////do sg that is helpful
+do you good/////be beneficial
+dog-eared/////a turned down corner of a page
+Don't beat around the bush/////Get to the point.
+Don't bite off more than you can chew/////Don't take on more work than you can do.
+don't count your chickens before the eggs have hatched/////Don't make plans for something that might not happen.
+don't give up the day job/////You are not very good at something. You could definitely not do it professionally.
+don't put all your eggs in one basket/////Do not put all your resources in one possibility.
+drastic times call for drastic measures/////When you are extremely desperate you need to take drastic actions.
+eat humble pie/////to act very humble when one is shown to be wrong
+eat one's words/////be forced to retract something one has said
+egg someone on/////urge someone to continue doing something
+egghead/////an academic person
+elvis has left the building/////The show has come to an end. It's all over.
+every cloud has a silver lining/////Be optimistic, even difficult times will lead to better days
+far cry from/////Very different from
+feel a bit under the weather/////don't feel well
+gate-crasher/////a person attends an event without invitation
+get your wires crossed/////be confused about something
+give the benefit of the doubt/////Believe someone's statement, without proof
+go bananas/////to be extremely happy/anxious
+go Dutch/////share the cost of something
+got something up his sleeve/////has a plan or idea he will keep secret until needed
+grasp the nettle/////to take action immediately in order to deal with an unpleasant situation
+hair-raising/////very frightening
+half-baked/////on the table but still unofficial
+hard up/////short of money
+have a good time/////enjoy yourself
+have a screw loose/////be silly or eccentric
+have a thin time/////to experience a difficult period
+have egg on one's face/////feel embarrassed about one's own fault
+have got a thick skin/////ignore personal criticism
+have kittens/////become extremely upset about something
+have someone eating out of one's hand/////easily make someone do or think what you want
+have your head screwed on/////be practical and wise
+hear it on the grapevine/////hear something through gossip
+hen-pecked/////criticised
+his cup of tea/////the type of person he likes
+hit the sheets/sack/hay/////go to bed
+hold it/////do not move/wait
+hold one's horses/////slow down/be patient
+hot under the collar/////displaying great enthusiasm
+I let my heart rule my head/////In my decisions I will follow my feelings
+icing/frosting on the cake/////an additional benefit/good thing
+in a nutshell/////basically
+in a tight corner/////in a difficult situation
+in the blink of an eye/////in an extremely short time
+in the driving seat/////in control of a situation
+in the heat of the moment/////Overwhelmed by what is happening in the moment.
+in the red/////in debt
+it takes two to tango/////Actions or communications need more than one person
+jump on the bandwagon/////Join a popular trend or activity.
+jump to it/////do it quickly
+keep a tight rein on something/someone/////control something or someone strictly
+keep something at bay/////Keep something away.
+kick the bucket/////die
+kill two birds with one stone/////to accomplish two different things at the same time.
+lay down the law/////tell people what they must do
+lay it on thick/////exaggerate/overwhelm sg
+learn the ropes/////learn how to do a particular job
+let oneself go/////relax completely
+let sleeping dogs lie/////do not disturb a situation as it is - since it would result in trouble or complications.
+let the cat out of the bag/////To share information that was previously concealed
+like butter wouldn't melt in her mouth/////looks innocent
+like peas in a pod/////very close or intimate
+like water off a duck's back/////without effect
+look a gift horse in the mouth/////to criticize or refuse to take something good that has been offered to you
+look daggers at someone/////look angrily at someone
+lose your head/////not have control of your emotions
+make a beeline for something/////go for sg with all of your efforts
+make a long story short/////Come to the point - leave out details
+make ends meet/////earn just enough money to live on
+method to my madness/////An assertion that, despite one's approach seeming random, there actually is structure to it.
+miss the boat/////someone missed his or her chance
+money doesn't grow on trees/////there is only a limited amount of money
+money for old rope/////a very quick and easy way to earn money
+mutton dressed as lamb/////an old woman trying to look and dress like a much younger one
+nest egg/////money saved for the future
+not a spark of decency/////No manners
+not have the heart to do something/////feel unable to do something because it would be unkind
+not playing with a full deck/////Someone who lacks intelligence.
+nuts about someone or something/////really likes
+nutty as a fruitcake/////a little crazy
+off one's head/////crazy
+off one's rocker/////Crazy, demented, out of one's mind, in a confused or befuddled state of mind, senile.
+off the cuff/////without preparation
+on balance/////after considering everything
+on call/////available to do sg at any time
+on the ball/////When someone understands the situation well.
+on the beat/////be on patrol
+on the dole/////receiving welfare money
+on the dot/////at exactly the right time
+on the mend/////improving health
+on the move/////moving from place to place
+on the off-chance/////you hope to find sy
+on the rack/////anxious
+on the right track/////acting in a way that will bring a desired result
+on the ropes/////having serious problems and likely to fail
+on the run/////be in a hurry
+on the tiles/////having a lively night out
+once in a blue moon/////Happens very rarely.
+one smart cookie/////an intelligent person
+one swallow doesn't make a summer/////a single instance doesn't indicate a trend
+out for the count/////unconscious/in a deep sleep
+out of bounds/////not allowed
+out of character/////unlike one's usual behaviour
+out of condition/////not in a good physical health
+out of place/////not in the proper place
+out of reach/////not near enough to be touched
+out of sorts/////not feeling well
+out of the frying pan and into the fire/////from a bad situation to a worse situation
+out of the ordinary/////unusual
+out of the running/////with no chance to win
+out on a limb/////at risk
+out to lunch/////a little out of touch with reality
+out with it/////say it
+over the hill/////too old
+over the moon/////extremely happy
+over the top/////behave extremely
+pay through the nose/////pay all your money
+play his cards right/////make good use of one's resources/strategies
+play second fiddle/////be less important
+play with fire/////do something dangerous
+plays her cards close to her chest/////keeps her plans or ideas secret
+polish off/////finish quickly
+polishes the apple/////continues to be servile and brown-nose his boss
+Practice makes perfect/////frequently doing something makes one better at doing it
+pull one's socks up/////one have to make a great effort
+pull one's weight/////do one's share
+pull strings/////use your influence in order to get something
+pull wool over his/her eyes/////to deceive someone into thinking well of them.
+rabbit around/about/////talk about something too much
+rough and ready/////acting with offhand promptness and efficiency
+see eye to eye/////This idiom is used to say that two (or more people) agree on something.
+send someone packing/////ask someone to leave immediately
+sit on the fence/////This is used when someone does not want to choose or make a decision.
+skate on thin ice/////be in a risky situation
+sleep on it/////think it over
+smell a rat/////be suspicious about sg
+sour grapes/////be jealous for something that someone can't have
+speak of the devil!/////This expression is used when the person you have just been talking about arrives.
+spice things up/////add excitement or interest to a story
+spill the beans/////share confidential information
+steal someone's thunder/////To take the credit for something someone else did.
+step on it/////go faster
+stiff-necked/////stubborn
+storm in the tea cup/////a small problem is exaggerated
+strike while the iron is hot/////do something immediately while you have a good chance of achieving success
+take it easy/////relax
+take it or leave it/////do not have a choice
+take something to heart/////think about something seriously
+take something with a grain of salt/////treat something skeptically/with reservations
+take the wind out of someone's sail/////make someone less confident by saying something unexpected
+take with a grain of salt/////This means not to take what someone says too seriously.
+talk shop/////talk about work/job
+taste of your own medicine/////repay for sg bad that you did to others
+that does it/////enough
+that will do/////no more is needed
+that's for sure/////no doubt about it
+that's the ticket/////that's just what is needed
+that's the way the cookie crumbles/////that is the way matters have worked out
+that's torn it/////an unexpected event upsets one's plan
+the ball is in your court/////It is up to you to make the next decision or step
+the cream of the crop/////the best
+the early bird catches the worm/////the person who takes the earliest opportunity to do sg will gain the advantage over others
+the gift of the gab/////be good at talking
+the last straw/////The final problem in a series of problems.
+the pen is mightier than the sword/////writing is more effective than violence
+the thin edge of the wedge/////a minor change that begins a major development
+there and then/////immediately
+there's nothing else for it/////there is no alternative
+there's nothing to it/////it is very easy to do
+thick-skinned/////insensitive to criticism
+throw a wobbly/////suddenly becomes very upset and make a big display of it
+to hear something straight from the horse's mouth/////To hear something from the authoritative source.
+to moonlight/////to have a second job
+toe the line/////to do what you are ordered or expected to do
+upset the apple cart/////spoil someone's plans
+use your head/////use your own intelligence
+uses his noodles/////thinks
+vanish into thin air/////disappear without leaving a trace
+wait for the dust to settle/////wait for an unsettled situation to become calm
+wait one's turn/////wait patiently for your opportunity to do something
+wet behind the ears/////lacking experience
+white elephant/////an expensive but useless thing
+whole nine yards/////everything
+work wonders/////be surprisingly beneficial/cause improvements
+wouldn't be caught dead/////Would never willingly do something
+you can't have your cake and eat it too/////you cannot have or want more than you deserve
+You hit the nail on the head/////You are absolutely correct.
+your guess is as good as mine/////do not know the answer to a question

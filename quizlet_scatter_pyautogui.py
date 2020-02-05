@@ -3,7 +3,9 @@ A class to solve Quizlet scatter games.
 
 The program uses selenium to launch a webbrowser and grab information, and then
 uses pyautogui to click the pairs. The user can specify how many times to play
-the game, as there can be some difference in scores between games.
+the game, as there can be some difference in scores between games. The set
+should be exported with a custom separator of ///// and then stored in
+quizlet.txt.
 
 Author: David Chen
 """
@@ -13,6 +15,9 @@ from selenium.webdriver.chrome.options import Options
 from time import sleep
 
 pyautogui.PAUSE = 0  # no delay between clicks
+# USER_DATA_DIR = '--user-data-dir=/home/dchen327/.config/google-chrome/Profile 2'
+USER_DATA_DIR = '--user-data-dir=/home/dchen327/.config/google-chrome/Profile 2'
+LINK = 'https://quizlet.com/340870200/'
 
 
 class ScatterSolver:
@@ -80,6 +85,6 @@ class ScatterSolver:
 
 if __name__ == '__main__':
     # make sure the link is in this format; remove anything beyond the numbers
-    link = 'https://quizlet.com/340870200/'
+    link = 'https://quizlet.com/287409276/'
     num_plays = 5
-    solver = ScatterSolver(link, num_plays)
+    solver = ScatterSolver(LINK, num_plays)
