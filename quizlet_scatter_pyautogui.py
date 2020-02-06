@@ -14,10 +14,18 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from time import sleep
 
-pyautogui.PAUSE = 0  # no delay between clicks
-# USER_DATA_DIR = '--user-data-dir=/home/dchen327/.config/google-chrome/Profile 2'
+USER_DATA_DIR = None  # keep browser settings across runs
 USER_DATA_DIR = '--user-data-dir=/home/dchen327/.config/google-chrome/Profile 2'
-LINK = 'https://quizlet.com/340870200/'
+CLICK_LOC = (350, 525)  # location to click to start game
+pyautogui.PAUSE = 0  # no delay between clicks
+LINK = 'https://quizlet.com/287409276/'  # remove anything after the numbers
+NUM_PLAYS = 5
+PATH_TO_SET = 'quizlet.txt'  # exported set in txt file
+DELIMITER = '/////'  # used to separate terms and definitions in export
+X_RNG = (655, 1625)  # range of pixel values to click in grid
+Y_RNG = (370, 940)
+X_STEP = 485  # space between tiles
+Y_STEP = 190
 
 
 class ScatterSolver:
@@ -35,31 +43,27 @@ class ScatterSolver:
     def get_pairs(self):
         """ Get term-definition pairs from text file """
         pairs = {}
-        with open('quizlet.txt') as f:
+        with open(PATH_TO_SET) as f:
             for pair in f.read().splitlines():
-                term, definition = pair.split('/////')
+                term, definition = pair.split(DELIMITER)
                 pairs[term] = definition
         return pairs
 
     def setup_grid(self):
         """ Setup pixel positions for cards """
-        x_rng = (655, 1625)
-        y_rng = (370, 940)
-        x_step = 485
-        y_step = 190
         positions = []
-        for y in range(y_rng[0], y_rng[1] + 1, y_step):
-            for x in range(x_rng[0], x_rng[1] + 1, x_step):
+        for y in range(Y_RNG[0], Y_RNG[1] + 1, Y_STEP):
+            for x in range(X_RNG[0], X_RNG[1] + 1, X_STEP):
                 positions.append((x, y))
         return positions
 
     def launch_browser(self):
         """ Launch chrome and go to game link """
         options = Options()
-        options.add_argument(
-            '--user-data-dir=/home/dchen327/.config/google-chrome/Profile 2')
+        if USER_DATA_DIR:
+            options.add_argument(USER_DATA_DIR)
         options.add_experimental_option('excludeSwitches', ['enable-automation'])
-        options.add_experimental_option('detach', True)
+        options.add_experimental_option('detach', True)  # allow instance to keep running after function ends
         options.add_argument('--start-maximized')
         self.driver = webdriver.Chrome(options=options)
         self.driver.get(self.link + 'micromatch')
@@ -67,7 +71,7 @@ class ScatterSolver:
     def get_cards(self):
         """ Get values of cards from current game """
         sleep(0.5)
-        pyautogui.click(350, 525)
+        pyautogui.click(*CLICK_LOC)
         sleep(0.5)  # wait for words to show up, since there is a fade in animation
         card_elements = self.driver.find_elements_by_class_name('MatchModeQuestionGridBoard-tile')
         cards = [card.text for card in card_elements]
@@ -84,7 +88,4 @@ class ScatterSolver:
 
 
 if __name__ == '__main__':
-    # make sure the link is in this format; remove anything beyond the numbers
-    link = 'https://quizlet.com/287409276/'
-    num_plays = 5
-    solver = ScatterSolver(LINK, num_plays)
+    solver = ScatterSolver(LINK, NUM_PLAYS)
