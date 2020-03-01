@@ -5,5 +5,4 @@ also known as micromatch. The set must be exported with a delimiter
 (default is /////) pasted in quizlet.txt. The user must also set coordinates on
 the screen for tiles, so the pyautogui knows where to click.
 ## Demonstration
-![scatter_solve](https://user-images.githubusercontent.com/37674516/73896070-b2f15c80-484f-11ea-8f46-aaa9161762cb.png)
-![scatter_first_place](https://user-images.githubusercontent.com/37674516/73896068-b2f15c80-484f-11ea-8940-d196b42e4aab.png)
+![quizlet_scatter](https://user-images.githubusercontent.com/37674516/75617561-b619f880-5b2e-11ea-93bd-606ef0a8fec5.gif)
