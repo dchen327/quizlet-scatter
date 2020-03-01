@@ -62,7 +62,7 @@ class ScatterSolver:
         options = Options()
         if USER_DATA_DIR:
             options.add_argument(USER_DATA_DIR)
-        options.add_experimental_option('excludeSwitches', ['enable-automation'])
+        options.add_experimental_option('excludeSwitches', ['enable-automation'])  # remove the little popup in corner
         options.add_experimental_option('detach', True)  # allow instance to keep running after function ends
         options.add_argument('--start-maximized')
         self.driver = webdriver.Chrome(options=options)
@@ -80,7 +80,7 @@ class ScatterSolver:
     def play_game(self, cards):
         """ Clicks on all pairs """
         for i in range(len(cards)):
-            if cards[i] in self.pairs:  # is a term
+            if cards[i] in self.pairs:  # is a term, click the term then definition
                 pyautogui.click(self.grid[i])
                 definition = self.pairs[cards[i]]
                 j = cards.index(definition)
