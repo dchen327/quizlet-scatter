@@ -18,10 +18,11 @@ USER_DATA_DIR = None  # keep browser settings across runs
 USER_DATA_DIR = '--user-data-dir=/home/dchen327/.config/google-chrome/Profile 2'
 CLICK_LOC = (350, 525)  # location to click to start game
 pyautogui.PAUSE = 0  # no delay between clicks
-LINK = 'https://quizlet.com/287409276/'  # remove anything after the numbers
-NUM_PLAYS = 5
+LINK = 'https://quizlet.com/29813075/'  # remove anything after the numbers
+NUM_PLAYS = 1
 PATH_TO_SET = 'quizlet.txt'  # exported set in txt file
-DELIMITER = '/////'  # used to separate terms and definitions in export
+TERM_DEF_DELIMITER = '|||'  # custom delimiter used to separate terms and definitions in export
+ROW_DELIMITER = '||||'  # custom delimter used to separate rows in export
 X_RNG = (655, 1625)  # range of pixel values to click in grid
 Y_RNG = (370, 940)
 X_STEP = 485  # space between tiles
@@ -44,9 +45,10 @@ class ScatterSolver:
         """ Get term-definition pairs from text file """
         pairs = {}
         with open(PATH_TO_SET) as f:
-            for pair in f.read().splitlines():
-                term, definition = pair.split(DELIMITER)
-                pairs[term] = definition
+            for pair in f.read().split(ROW_DELIMITER):
+                if pair:
+                    term, definition = pair.split(TERM_DEF_DELIMITER)
+                    pairs[term] = definition
         return pairs
 
     def setup_grid(self):
@@ -72,9 +74,10 @@ class ScatterSolver:
         """ Get values of cards from current game """
         sleep(0.5)
         pyautogui.click(*CLICK_LOC)
-        sleep(0.5)  # wait for words to show up, since there is a fade in animation
+        sleep(0.7)  # wait for words to show up, since there is a fade in animation
         card_elements = self.driver.find_elements_by_class_name('MatchModeQuestionGridBoard-tile')
         cards = [card.text for card in card_elements]
+        print(cards)
         return cards
 
     def play_game(self, cards):
